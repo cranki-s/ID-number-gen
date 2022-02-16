@@ -65,7 +65,7 @@ function time_converter(timestamp)
     let year = a.getFullYear();
     let month = a.getMonth() + 1;
     let date = a.getDate();
-    let time = date < 10 ? "0" + date : date + "." + month < 10 ? "0" + month : month + "." + year;
+    let time = (date < 10 ? "0" + date : date) + "." + (month < 10 ? "0" + month : month) + "." + year;
     return time;
 }
 
